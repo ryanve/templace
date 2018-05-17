@@ -1,0 +1,26 @@
+{
+  "name": "templace",
+  "version": "0.0.0",
+  "description": "HTML template content loader",
+  "author": "Ryan Van Etten",
+  "license": "CC0-1.0",
+  "main": "templace.js",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "homepage": "https://github.com/ryanve/templace",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanve/templace.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ryanve/templace/issues"
+  },
+  "keywords": [
+    "dom",
+    "template"
+  ],
+  "devDependencies": {
+    "eslint": "^4.19.1"
+  }
+}
