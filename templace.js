@@ -6,7 +6,7 @@
   do {
     var template = document.querySelector("template[data-templace]")
     if (!template) break
-    if (!("content" in template)) continue
+    if (!("content" in template)) break
     var fragment = template.content.cloneNode(true)
     template.parentNode.insertBefore(fragment, template)
     template.removeAttribute("data-templace")
