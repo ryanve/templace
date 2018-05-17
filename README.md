@@ -1,5 +1,5 @@
 # templace
-Progressively load template content when JavaScript is enabled. Useful for wrapping low-priority heavy content like `iframe` embeds such to load after initial page load and only when JavaScript is enabled
+Progressively load template content via JavaScript. Useful for wrapping low-priority heavy content like `iframe` embeds such to load after initial page load and only when JavaScript is enabled
 
 ```
 npm install templace
