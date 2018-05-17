@@ -1,7 +1,7 @@
 {
   "name": "templace",
   "version": "0.0.0",
-  "description": "HTML template content loader",
+  "description": "<template> progressive content loader",
   "author": "Ryan Van Etten",
   "license": "CC0-1.0",
   "main": "templace.js",
@@ -18,7 +18,12 @@
   },
   "keywords": [
     "dom",
-    "template"
+    "performance",
+    "progressive",
+    "enhancement",
+    "template",
+    "loading",
+    "loader"
   ],
   "devDependencies": {
     "eslint": "^4.19.1"

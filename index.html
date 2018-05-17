@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="utf-8">
+<title>templace</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style>
+::selection {
+  background: Purple;
+  color: Yellow;
+}
+[href] {
+  color: inherit;
+}
+:focus {
+  outline-color: Yellow;
+}
+html {
+  font-family: sans-serif;
+  color: Black;
+  background: DeepSkyBlue;
+}
+body {
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 1.125rem;
+}
+figure {
+  margin: 1rem auto;
+  padding: 1rem;
+  background: Black;
+  color: DeepSkyBlue;
+}
+figcaption {
+  margin: 1rem 0;
+  font-weight: bold;
+  font-size: 1.625rem;
+}
+iframe {
+  border: 0;
+  max-width: 100%;
+}
+h1 {
+  margin: 1rem 0;
+}
+template {
+  display: none;
+}
+</style>
+
+<h1><a href="https://ryanve.github.io/templace/" rel="bookmark">templace</a></h1>
+
+<a href="https://github.com/ryanve/templace">github</a>
+<a href="https://www.npmjs.com/package/templace">npm</a>
+<a href="https://unpkg.com/templace@latest">unpkg</a>
+
+<h2>tests</h2>
+<ul>
+  <li>if JavaScript is <b>enabled</b> then template content should appear below
+  <li>if JavaScript is <b>disabled</b> then nothing should appear below
+</ul>
+
+<template data-templace>
+  <figure>
+    <figcaption>figure test</figcaption>
+    <strong>Be bold</strong>
+  </figure>
+</template>
+
+<template data-templace>
+  <figure>
+    <figcaption>bandcamp iframe test</figcaption>
+    <iframe width="480" height="42" src="https://bandcamp.com/EmbeddedPlayer/album=1610178427/size=small/bgcol=222222/linkcol=00bfff/artwork=none/transparent=true/"></iframe>
+  </figure>
+</template>
+
+<script src="templace.js"></script>
