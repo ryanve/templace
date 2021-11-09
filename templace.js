@@ -1,8 +1,9 @@
 /** @preserve npm.im/templace */
 !function(root, name, api) {
   typeof module != "undefined" && module.exports ? module.exports = api : root[name] = api
-  typeof document == "undefined" || api()
-}(this, "templace", function() {
+  typeof document == "undefined" || api("querySelector" in document)
+}(this, "templace", function(selectable) {
+  if (!selectable) return;
   do {
     var template = document.querySelector("template[data-templace]")
     if (!template) break
