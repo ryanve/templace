@@ -1,15 +1,26 @@
 /** @preserve npm.im/templace */
-!function(root, name, api) {
-  typeof module != "undefined" && module.exports ? module.exports = api : root[name] = api
-  typeof document == "undefined" || api("querySelector" in document)
-}(this, "templace", function(selectable) {
-  if (!selectable) return;
-  do {
-    var template = document.querySelector("template[data-templace]")
-    if (!template) break
-    if (!("content" in template)) break
-    var fragment = template.content.cloneNode(true)
-    template.parentNode.insertBefore(fragment, template)
-    template.removeAttribute("data-templace")
-  } while (template)
-});
+!function(that) {
+  function noop() {}
+  function loop() {
+    do {
+      var plate = document[next](place)
+      if (!plate) break
+      if (!("content" in plate)) break
+      var clone = plate.content.cloneNode(true)
+      plate.parentNode.insertBefore(clone, plate)
+      plate.removeAttribute(data)
+    } while (plate)
+  }
+  var name = "templace"
+  var dom = typeof document != "undefined"
+  var next = "querySelector"
+  var data = "data-templace"
+  var place = "template[data-templace]"
+  var active = dom && next in document
+  var api = active ? loop : noop
+  var common = typeof module != "undefined"
+  common && module.exports
+    ? module.exports = api
+    : that[name] = api
+  api()
+}(this);
