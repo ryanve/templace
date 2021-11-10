@@ -2,11 +2,13 @@
 !function(that) {
   function noop() {}
   function loop() {
+    var plate
+    var clone
     do {
-      var plate = document[next](place)
+      plate = document[next](place)
       if (!plate) break
       if (!("content" in plate)) break
-      var clone = plate.content.cloneNode(true)
+      clone = plate.content.cloneNode(true)
       plate.parentNode.insertBefore(clone, plate)
       plate.removeAttribute(data)
     } while (plate)
